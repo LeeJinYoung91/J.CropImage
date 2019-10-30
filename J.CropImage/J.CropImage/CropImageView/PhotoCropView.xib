@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="id_photoCrop" id="iN0-l3-epB" customClass="TbPhotoCropView" customModule="AnibeaR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sh9-w3-Kbc">
+                    <rect key="frame" x="0.0" y="69" width="414" height="827"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4t-hP-aib">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE5-Ic-xYj" customClass="TbCustomButton" customModule="AnibeaR" customModuleProvider="target">
+                            <rect key="frame" x="366" y="28" width="30" height="34"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.4039215686" green="0.76862745099999996" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickConfirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="TOI-S1-MOJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7Y-Rf-Zuv" customClass="TbCustomButton" customModule="AnibeaR" customModuleProvider="target">
+                            <rect key="frame" x="18" y="28" width="30" height="34"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.4039215686" green="0.76862745099999996" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="zVq-u9-F0m"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필 등록" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-MN-N0b">
+                            <rect key="frame" x="170" y="35.5" width="74" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="bx3-MN-N0b" firstAttribute="centerX" secondItem="g4t-hP-aib" secondAttribute="centerX" id="2g4-ti-grL"/>
+                        <constraint firstItem="b7Y-Rf-Zuv" firstAttribute="leading" secondItem="g4t-hP-aib" secondAttribute="leading" constant="18" id="3Cn-hH-HyA"/>
+                        <constraint firstAttribute="height" constant="69" id="ATQ-KM-dxJ"/>
+                        <constraint firstAttribute="bottom" secondItem="bx3-MN-N0b" secondAttribute="bottom" constant="14" id="X6E-0I-M7B"/>
+                        <constraint firstAttribute="bottom" secondItem="b7Y-Rf-Zuv" secondAttribute="bottom" constant="7" id="Xbg-6S-yTV"/>
+                        <constraint firstAttribute="trailing" secondItem="eE5-Ic-xYj" secondAttribute="trailing" constant="18" id="aX2-2z-v6X"/>
+                        <constraint firstAttribute="bottom" secondItem="eE5-Ic-xYj" secondAttribute="bottom" constant="7" id="cNO-19-Thv"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X6z-ZW-TTl">
+                    <rect key="frame" x="0.0" y="69" width="414" height="827"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="X6z-ZW-TTl" secondAttribute="trailing" id="2Yd-PU-t5u"/>
+                <constraint firstItem="g4t-hP-aib" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Iu-qL-syk"/>
+                <constraint firstAttribute="trailing" secondItem="g4t-hP-aib" secondAttribute="trailing" id="Au6-5m-cGT"/>
+                <constraint firstItem="sh9-w3-Kbc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hv0-Ho-E50"/>
+                <constraint firstItem="g4t-hP-aib" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="K3H-sQ-uts"/>
+                <constraint firstAttribute="bottom" secondItem="sh9-w3-Kbc" secondAttribute="bottom" id="NYF-Ce-cop"/>
+                <constraint firstAttribute="trailing" secondItem="sh9-w3-Kbc" secondAttribute="trailing" id="Oig-af-TBh"/>
+                <constraint firstItem="X6z-ZW-TTl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cmu-v7-gVo"/>
+                <constraint firstAttribute="bottom" secondItem="X6z-ZW-TTl" secondAttribute="bottom" id="iWS-kz-ubf"/>
+                <constraint firstItem="sh9-w3-Kbc" firstAttribute="top" secondItem="g4t-hP-aib" secondAttribute="bottom" id="qZm-n9-z7h"/>
+                <constraint firstItem="X6z-ZW-TTl" firstAttribute="top" secondItem="g4t-hP-aib" secondAttribute="bottom" id="yhK-3M-dFf"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelButton" destination="b7Y-Rf-Zuv" id="uSc-PS-HJf"/>
+                <outlet property="confirmButton" destination="eE5-Ic-xYj" id="kAf-sD-lMo"/>
+                <outlet property="cropAreaBottomConstraint" destination="iWS-kz-ubf" id="9Qb-yp-wBR"/>
+                <outlet property="foregroundView" destination="X6z-ZW-TTl" id="I5B-Cd-cpY"/>
+                <outlet property="imageView" destination="sh9-w3-Kbc" id="CIk-fF-Gxl"/>
+                <outlet property="title" destination="bx3-MN-N0b" id="x5n-Yj-mxZ"/>
+                <outlet property="topBarHeightConstraint" destination="ATQ-KM-dxJ" id="irV-wG-MLi"/>
+            </connections>
+            <point key="canvasLocation" x="23.188405797101453" y="51.358695652173914"/>
+        </view>
+    </objects>
+</document>
