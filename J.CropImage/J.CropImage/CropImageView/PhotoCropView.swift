@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Photos
 
-class TbPhotoCropView : UIView {
+class PhotoCropView : UIView {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var confirmButton: UIButton!
